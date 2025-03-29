@@ -1,30 +1,135 @@
-<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Khawaja Hospital</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Learn about Khawaja Hospital, a leading healthcare provider in Lahore offering expert doctors, advanced medical technology, and patient-centered care.">
+    <meta name="keywords" content="Khawaja Hospital, healthcare in Lahore, expert doctors, medical care, hospital, patient care, general physician">
+    <meta name="author" content="Khawaja Hospital">
+
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="About Us - Khawaja Hospital">
+    <meta property="og:description" content="Khawaja Hospital is dedicated to offering expert healthcare services with world-class medical technology and experienced doctors in Lahore.">
+    <meta property="og:image" content="images/hospital_about.jpg">
+    <meta property="og:url" content="http://www.khawajahospital.com/about.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Us - Khawaja Hospital">
+    <meta name="twitter:description" content="Khawaja Hospital provides top-tier healthcare services with highly qualified doctors and state-of-the-art technology in Lahore.">
+    <meta name="twitter:image" content="images/hospital_about.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>About Khawaja Hospital</h1>
+        <div class="header-overlay">
+            <h1>About Khawaja Hospital</h1>
+            <p>Your Trusted Healthcare Provider in Lahore</p>
+        </div>
     </header>
+
+    <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="about.html" title="About Us">About</a></li>
+            <li><a href="services.html" title="Our Services">Services</a></li>
+            <li><a href="gallery.html" title="Hospital Gallery">Gallery</a></li>
+            <li><a href="contact.html" title="Contact Us">Contact</a></li>
         </ul>
     </nav>
-    <section>
-        <p>Khawaja Hospital is a private healthcare facility committed to patient satisfaction and quality medical services. Our team includes highly trained doctors, nurses, and paramedics, using modern medical technology to provide the best care.</p>
+
+    <!-- Hospital Information Section -->
+    <section class="hospital-info" style="margin: 0 10%;">
+        <h2>About Khawaja Hospital</h2>
+        <p>Khawaja Hospital is a state-of-the-art healthcare facility located in the heart of Lahore, known for its world-class medical services and patient care. We are committed to providing the best healthcare solutions, backed by highly experienced doctors and cutting-edge medical technology.</p>
+        <p>We specialize in offering a wide range of medical services, from emergency care to specialized treatments, ensuring the best outcomes for our patients.</p>
     </section>
-    <footer>
-        <p>&copy; 2025 Khawaja Hospital. All rights reserved.</p>
+
+    <!-- Doctors Section -->
+    <section class="doctors" style="margin: 0 10%;">
+        <h2>Meet Our Experienced Doctors</h2>
+        <div class="doctor-profile">
+            <div class="doctor-details">
+                <img src="images/doctor1.jpg" alt="Dr. Muhammad Iqbal Khawaja" class="doctor-img">
+                <h3>Dr. Muhammad Iqbal Khawaja</h3>
+                <p><strong>General Physician</strong></p>
+                <p><strong>Qualifications:</strong> MBBS, MPh</p>
+                <p><strong>Consultation:</strong> Mon-Sun, 9 AM - 11 PM</p>
+                <a href="tel:+924235273455" title="Call Helpline">Call Helpline</a>
+            </div>
+            <div class="doctor-details">
+                <img src="images/doctor2.jpg" alt="Dr. Ahmed Ali Khan" class="doctor-img">
+                <h3>Dr. Ahmed Ali Khan</h3>
+                <p><strong>Specialist Surgeon</strong></p>
+                <p><strong>Qualifications:</strong> MBBS, FCPS</p>
+                <p><strong>Consultation:</strong> Mon-Sat, 10 AM - 5 PM</p>
+                <a href="tel:+924235273455" title="Call Helpline">Call Helpline</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info" style="margin: 0 10%;">
+        <h2>Hospital Location & Contact</h2>
+        <p><strong>Address:</strong> 24 KM, Ferozepur Road, Kahna, Lahore, 54000</p>
+        <p><strong>Phone:</strong> (042) 35273455 | 0321 4155032 | 0323 4837364</p>
+        <p><strong>Helpline:</strong> sms:+923234837364</p>
+        <p><strong>Website:</strong> 
+            <a href="https://www.facebook.com/khawajahospitalkahna/" target="_blank" title="Visit our Facebook page">Facebook</a> | 
+            <a href="https://www.linkedin.com/company/102946420/" target="_blank" title="Visit our LinkedIn page">LinkedIn</a>
+        </p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer style="text-align: center; margin-top: 40px;">
+        <p>&copy; 2025 Khawaja Hospital. All rights reserved. | <a href="privacy-policy.html" title="Privacy Policy">Privacy Policy</a></p>
     </footer>
+
+    <!-- Schema.org Structured Data for SEO (JSON-LD) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Hospital",
+            "name": "Khawaja Hospital",
+            "url": "http://www.khawajahospital.com/about.html",
+            "logo": "images/logo.png",
+            "sameAs": [
+                "https://www.facebook.com/khawajahospitalkahna",
+                "https://twitter.com/khawajahospitalkahna",
+                "https://www.linkedin.com/company/khawajahospitalkahna"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "24 KM, Ferozepur Road",
+                "addressLocality": "Kahna",
+                "addressRegion": "Lahore",
+                "postalCode": "54000",
+                "addressCountry": "Pakistan"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+92 42 35273455",
+                "contactType": "customer service",
+                "areaServed": "PK",
+                "availableLanguage": "English"
+            }
+        }
+    </script>
+
 </body>
 </html>
