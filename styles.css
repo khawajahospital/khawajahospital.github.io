@@ -1,0 +1,32 @@
+.section {
+    padding: 50px;
+    text-align: center;
+}
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.highlight {
+    text-align: center;
+    width: 30%;
+}
+.highlight img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 5px;
+}
