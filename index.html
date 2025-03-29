@@ -1,55 +1,124 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khawaja Hospital - Quality Healthcare in Kahna</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Khawaja Hospital - Quality Healthcare in Kahna</title>
+        
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Khawaja Hospital provides the best healthcare services in Kahna, Lahore, with expert doctors, state-of-the-art medical technology, and 24/7 patient care.">
+        <meta name="keywords" content="Khawaja Hospital, healthcare, hospital in Lahore, patient care, expert doctors, medical technology, 24/7 emergency services">
+        <meta name="author" content="Khawaja Hospital">
+        
+        <!-- Open Graph for social sharing -->
+        <meta property="og:title" content="Khawaja Hospital - Quality Healthcare in Kahna">
+        <meta property="og:description" content="Providing top-tier healthcare services with expert doctors and advanced medical technology in Kahna, Lahore.">
+        <meta property="og:image" content="images/hospital_front.jpg">
+        <meta property="og:url" content="http://www.khawajahospital.com">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Khawaja Hospital - Quality Healthcare in Kahna">
+        <meta name="twitter:description" content="Providing top-tier healthcare services with expert doctors and advanced medical technology in Kahna, Lahore.">
+        <meta name="twitter:image" content="images/hospital_front.jpg">
+
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+        
+        <!-- Google Fonts for better typography -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <script defer src="script.js"></script>
+    </head>    
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Khawaja Hospital</h1>
-        <p>Providing Quality Healthcare in Kahna</p>
+        <div class="header-overlay">
+            <h1>Khawaja Hospital</h1>
+            <p>Providing Quality Healthcare in Kahna</p>
+        </div>
     </header>
     
+    <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="about.html" title="About Us">About</a></li>
+            <li><a href="services.html" title="Our Services">Services</a></li>
+            <li><a href="gallery.html" title="Hospital Gallery">Gallery</a></li>
+            <li><a href="contact.html" title="Contact Us">Contact</a></li>
         </ul>
     </nav>
     
-    <section id="home" class="section">
+    <!-- Main Content Section -->
+    <section id="home" class="section" style="margin: 0 10%;">
         <h2>Welcome to Khawaja Hospital</h2>
-        <p>Patient satisfaction and the best healthcare facilities are what make Khawaja Hospital stand out in Kasur Road of Lahore.</p>
-        <img src="images/hospital_front.jpg" alt="Khawaja Hospital Front View" class="banner-img">
+        <p>Patient satisfaction and the best healthcare facilities are what make Khawaja Hospital stand out in Kasur Road, Lahore.</p>
+        <img src="images/front_image.jpg" alt="Khawaja Hospital Front View" class="banner-img responsive-img">
     </section>
     
-    <section class="highlights">
+    <!-- Contact Section (also included in index) -->
+    <section id="contact" class="section" style="margin: 0 10%; padding: 50px 0; background-color: #eef2f7;">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to get in touch with us, feel free to reach out through the contact form or our details below.</p>
+        <img src="images/contact_image.jpg" alt="Contact Us" class="contact-img">
+    </section>
+    
+    <!-- Highlights Section -->
+    <section class="highlights" style="display: flex; justify-content: space-between; gap: 10px; margin: 0 10%;">
         <div class="highlight">
-            <img src="images/doctor.jpg" alt="Expert Doctors">
+            <img src="images/doctor.jpg" alt="Expert Doctors" class="highlight-img responsive-img fixed-height">
             <h3>Expert Doctors</h3>
             <p>Certified professionals providing top-tier medical care.</p>
         </div>
         <div class="highlight">
-            <img src="images/technology.jpg" alt="Latest Technology">
+            <img src="images/area.jpg" alt="Latest Technology" class="highlight-img responsive-img fixed-height">
             <h3>Latest Technology</h3>
             <p>Up-to-date medical equipment for accurate diagnoses.</p>
         </div>
         <div class="highlight">
-            <img src="images/patient_care.jpg" alt="Patient Care">
+            <img src="images/bed.jpg" alt="Patient Care" class="highlight-img responsive-img fixed-height">
             <h3>Best Patient Care</h3>
             <p>24/7 emergency services and patient-centered treatment.</p>
         </div>
     </section>
     
-    <footer>
-        <p>&copy; 2025 Khawaja Hospital. All rights reserved.</p>
+    <!-- Footer Section -->
+    <footer style="text-align: center; margin-top: 40px;">
+        <p>&copy; 2025 Khawaja Hospital. All rights reserved. | <a href="privacy-policy.html" title="Privacy Policy">Privacy Policy</a></p>
     </footer>
+
+    <!-- Schema.org Structured Data for SEO (JSON-LD) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Hospital",
+            "name": "Khawaja Hospital",
+            "url": "http://www.khawajahospital.com",
+            "logo": "images/logo.png",
+            "sameAs": [
+                "https://www.facebook.com/khawajahospital",
+                "https://twitter.com/khawajahospital",
+                "https://www.linkedin.com/company/khawajahospital"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Kasur Road",
+                "addressLocality": "Lahore",
+                "addressCountry": "Pakistan"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+92 300 0000000",
+                "contactType": "customer service",
+                "areaServed": "PK",
+                "availableLanguage": "English"
+            }
+        }
+    </script>
 </body>
 </html>
